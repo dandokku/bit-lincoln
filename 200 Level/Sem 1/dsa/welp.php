@@ -48,7 +48,7 @@ $students = array(
 
 //? $students is a two-dimensional array where each element is an associative array representing a student
 
-$students_data = json_encode( $students );
+$students_data = json_encode( value: $students );
 echo "$students_data"
 // echo $students[0]["Name"]
 
