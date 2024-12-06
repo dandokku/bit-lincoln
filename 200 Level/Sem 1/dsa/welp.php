@@ -14,10 +14,12 @@ Types of Array in PHP
  <!-- 
  Arrays
  Operators
- Methods
+ Methods(for various data types like strings, arrays, lists and the others...maybe even dicitonaries and tuples(hell no))
  Switch Case
  Loops
  Functions
+ Arrow Functions
+ Nested For Loop
  -->
 
 
@@ -65,6 +67,37 @@ function userLogin($email = "welpwelp@gmail.com", $password = "welp123"){
     }
 };
 
-userLogin()
+userLogin();
 
+
+echo" ";
+echo" ";
+echo" ";
+
+// ? A FUNCTION THAT ADDS TWO NUMBERS
+function addNumber($n1, $n2){
+    // return $n1 + $n2;
+    $result = $n1 + $n2;
+    echo"$result";
+}
+
+addNumber(5, 8); //! function uses the stack data structure (FIFO)
+
+echo"";
+echo"";
+echo"";
+echo"";
+
+function greetMe($firstName, $lastName){
+    // $firstName = "Daniel";
+    // $lastName = "Jesuloba";
+    echo "Your full name is: $firstName $lastName";
+}
+
+greetMe("Daniel", "Jesuloba");
+
+
+
+$addition = fn($n1, $n2) => $n1 + $n2; //? Arrow Functions
+echo($addition(56, 34))
 ?>
